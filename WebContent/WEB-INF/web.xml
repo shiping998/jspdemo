@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true" version="3.0">
+  <display-name>Welcome to Tomcat</display-name>
+  <welcome-file-list>
+    <welcome-file>userlogin.jsp</welcome-file>
+  </welcome-file-list>
+  <description>
+     Welcome to Tomcat
+  </description>
+  <servlet>
+    <servlet-name>ServletUserRegister</servlet-name>
+    <servlet-class>com.user.servlet.ServletUserRegister</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserloginServlet</servlet-name>
+    <servlet-class>com.user.servlet.UserloginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletDeleteUser</servlet-name>
+    <servlet-class>com.user.servlet.ServletDeleteUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletToUserUpdate</servlet-name>
+    <servlet-class>com.user.servlet.ServletToUserUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletUserRegister</servlet-name>
+    <url-pattern>/ServletUserRegister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserloginServlet</servlet-name>
+    <url-pattern>/UserloginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletDeleteUser</servlet-name>
+    <url-pattern>/ServletDeleteUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletToUserUpdate</servlet-name>
+    <url-pattern>/ServletToUserUpdate</url-pattern>
+  </servlet-mapping>
+</web-app>
